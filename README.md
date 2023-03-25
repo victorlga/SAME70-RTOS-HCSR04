@@ -1,9 +1,9 @@
 # SAME70-RTOS-HCSR04
-This project implements a distance measurement system using an HC-SR04 ultrasonic sensor and displays the distance on a 128x32 OLED display using a SAME70 microcontroller.
+This project implements a distance measurement system using an HC-SR04 ultrasonic sensor and displays the distance on a 128x32 OLED display using a SAME70-XPLD microcontroller.
 
 The system works by triggering the ultrasonic sensor with a 10 µs pulse and measuring the duration of the returned echo signal. The duration is then converted to distance using the speed of sound. The measured distance and a chart of the distance over time is then displayed on the OLED display.
 
-The code is written in C language and uses the Atmel Software Framework (ASF) library for the SAME70 microcontroller. It also uses the FreeRTOS library for task scheduling and synchronization.
+The code is written in C language and uses the Atmel Software Framework (ASF) library for the SAME70-XPLD microcontroller. It also uses the FreeRTOS library for task scheduling and synchronization.
 
 ## Dependencies
 
@@ -46,6 +46,7 @@ The system will start running as soon as the code is flashed to the microcontrol
 
 ## Documentation
 
+- SAME70-XPLD: https://www.farnell.com/datasheets/2007959.pdf
 - HC-SR04: https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
 - OLED-Xplained-Pro: https://ww1.microchip.com/downloads/en/DeviceDoc/40002176A.pdf
 
